@@ -1,0 +1,10 @@
+def solution(num_list):
+    odd = ''
+    even = ''
+    for num in num_list:
+        if num % 2 == 1:
+            odd += str(num)
+            continue
+        even += str(num)
+    
+    return int(odd) + int(even)
